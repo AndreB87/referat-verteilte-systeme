@@ -1,0 +1,11 @@
+% first example chapter
+% @author Thomas Lehmann
+%
+\chapter{Fazit}
+Nach anfänglicher Planlosigkeit bei dieser Aufgabe, machte ich mir genauere Gedanken, wie ich diese angehen könnte und las mir noch einmal die Folien der Aufgabenvorstellung durch. Desto mehr ich mich damit beschäftigte, desto mehr Ideen kamen mir zur Implementierung. Ich entschied mich, diesen Lösungsansatz zu implementieren. \\
+Danach ging der Entwurf erst relativ leicht von der Hand. Nachdem ich jedoch mit der Implementierung begann, musste ich den Entwurf einige male abändern, da meine Ideen so nicht ganz funktionierten.\\
+Vor allem aber das Testen bereitete mir Probleme. Da die einzelnen Module relativ schwierig zu testen sind, musste ich erst alle Module fertigstellen, um vernünftig testen zu können. Zwar hätte man für jedes Modul  ein ausgiebiges Teststsystem schreiben kännen, jedoch hätte dies meinen zeitlichen Rahmen gesprengt. \\
+Dadurch, dass ein vernünftiges Testen erst möglich war, wart es auch schwierig, auftretende Fehler zu entdecken. Dies gelang jedoch dank der Debug-Ausgaben sehr gut. \\ 
+Das gegebene Testszstem bereitete noch einmal Probleme, da mein System zwar mit meinen Tests funktionierte, hier jedoch anfänglich neue Fehler auftraten. Diese Fehler traten auf, weil z.B. mein Nameservice in einem Subpackage lag und falsch benannt war. Hier wurde als Fehler angezeigt, dass  die Funktion getNameservice nicht vorhanden sei. Diese war aber implementiert. Ein Versuch, den Nameservice umzubenennen und in das Hauptpackage zu verschieben war jedoch erfolgreich.\\
+Ein zweiter Fehler trat auf, da ich die Funktion shutDown nicht implementiert hatte. Diese konnte jedoch leicht nachimplementiert werden.\\
+Der Compiler war ebenfalls eine Herausforderung. Hierbei orientierte ich mich an dem Compiler, der von Herrn Schulz bereitgestellt wurde. Ich entschied mich jedoch, nicht mit statischen Variablen zu arbeiten, da dies in meinen Augen keinen Sinn machte, da die Zeichen ziemlich kurz sind und ich so schneller implementieren konnte. Eine Änderung des Compilers war ja sowieso nicht vorgesehen.

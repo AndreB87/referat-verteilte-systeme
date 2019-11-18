@@ -1,0 +1,123 @@
+% first example chapter
+% @author Thomas Lehmann
+%
+\chapter{Lösungsweg}
+
+\section{Nameservice}
+Der Nameservice durfte gemäß den Vorgaben nicht in Java implementiert werden, daher entschied ich mich für Python.
+Abgebildet werden die Objekte in einem Dictionary, in dem Key-Value-Paare gespeichert werden können.\\
+Der Schlüssel für das jeweilige Objekt ist der Name des Objektes und der Wert dazu ist wieder ein Dictionary. Dieses Dictionary hat zwei Keys, zum einen mit dem Key "host", die als Wert die IP-Adresse des Servers, auf dem das Objekt liegt, hat und den Key "port", der als Wert die Portnummer hat.\\
+\\Geht eine Anfrage beim Nameserver an, wird ein Thread gestartet, in dem die eingehende Nachricht ausgewertet wird. Die jeweilige gewünschte Funktion (resolve oder rebind) wird ausgeführt und das Ergebnis zurückgegeben.\\
+Wird ein Objekt beim Nameservice gebunden, werden Hostadresse und Portnummer mittels Protokoll übertragen. Diese beim Namesservice eingegangene Nachricht wird dann über eine Split-Funktion aufgeteilt und die Adresse und der Port zum übergebenen Namen hinterlegt.\\
+Wird ein Objekt beim Nameservice angefragt, werden sofern vorhanden die IP-Adresse und der Port mittels des dafür angefertigten Protokolls zurückgegeben. Ist es nicht vorhanden, wird "nok:Unknown Object" zurückgegeben.\\
+
+\subsection{Ablauf innerhalb des Nameservice}
+\begin{itemize}
+\item Entgegennahme der Anfrage
+\item Starten eines Threads mit dem Socket
+\item Empfangen der Nachricht
+\item Aufteilen der Nachricht mittels Split-Funktion beim Ausrufezeichen 
+\item Auswerten des ersten Teils der Nachricht (Aufgerufene Funktion)
+\begin{enumerate}
+\item rebind - Weitergabe des zweiten Nachrichtenteils an die Funktion rebind - Ergebnis = Rückgabewert
+\item resolve - Weitergabe des zweiten Nachrichtenteils an die Funktion resolve - Ergebnis = Rückgabewert
+\item Sonstiges - Ergebnis = "nok:unknown message"
+\end{enumerate}
+\item Senden des Ergebnisses über den Socket
+\item Schließen des Sockets
+\end{itemize}
+
+\subsection{Ablauf rebind}
+\begin{itemize}
+\item Aufsplitten des zweiten Nachrictenteils mittels Splitfunktion am Doppelpunkt
+\item Erstellen eines Dictionarys, das Host-Adresse und Port beinhaltet
+\item EIntragen des Dictionary in das des Nameservice mit dem Namen als Key
+\item Rückgabe von "ok"
+\end{itemize}
+
+\subsection{Ablauf resolve}
+\begin{itemize}
+\item Abfrage des Objektes mit dem übergebenen Namen
+\begin{enumerate}
+\item Wenn vorhanden, zusammenbau des Rückgabestrings: "ok:<Name>:<Hostadresse>:<Port>"
+\item Wenn nicht vorhanden: Rückgabestring = 	"nok:no object"
+\end{enumerate}
+\item Rückgabe des Rückgabestrings
+\end{itemize}
+
+\section{Middleware}
+
+\subsection{Object Broker}
+Der ObjectBroker ist das FrontEnd der Middleware. Hier kann die Referenz zum Nameservice amgefragt werden. In meiner Implementierung kann auch direkt ein Objekt über den ObjectBroker mittels Funktion addObject(Object object) hinzugefügt werden. Diese ruft allerdings auch nur die Funktion rebind des Nameservice auf.\\
+Wird ein ObjectBroker erzeugt, wird automatisch ein Thread gestartet, der auf einem zufällig gewählten Port horcht. Gehen Anfragen ein, wird ein Dispatcher gestartet, der Anfragen entgegen nimmt und die Funktionen der lokalen Objekte mittels Reflection aufruft.
+
+\subsubsection{Ablauf ObjectBroker}
+\begin{itemize}
+\item Starten eines ServerSockets
+\item Horchen auf dem Port (hier ein zufällig erstellter)
+\item Bei eingehenden Anfragen: Erstellen eines neuen Dispatchers und starten des Dispatcher-Threads mittels start()
+\end{itemize}
+
+\subsubsection{Ablauf Dispatcher}
+\begin{itemize}
+\item Empfangen der Nachricht
+\item Splitten der Nachricht, um den Namen des angefragten Objektes zu bekommen
+\item Abfrage des Objektes im ObjectWarehouse
+\item Aufruf der Funktion callMethod(message) mit der empfangenden Nachricht als Parameter
+\item Rückgabe des Ergebnisses von callMethod 
+\end{itemize}
+
+\subsection{ObjectWarehouse}
+Das ObjectWarehouse speichert alle MWareObjekte, damit sowohl lokale als auch entfernte Objekte über die MiddleWare verwendet werden können. Zwar sollten keine lokalen Objekte über die MiddleWare benutzt werden, aber so wird unnötige Netzauslastung verhindert, falls doch ein lokales Objekt angesprochen werden soll.\\
+Das ObjectWarehouse kann vom ObjectBroker, vom Dispatcher und vom Nameservice angesprochen werden.
+
+\subsection{MWareObject}
+Das MWareObject ist ein Interface, dass von den Klassen LocalObject und RemoteObject implementiert wird. Es schreibt folgende Methoden vor:
+\begin{enumerate}
+\item String getName(); - Liefert den Namen des Objekts zurück
+\item String callMethod(String message); - Führt die Funktion aus, die laut der übergebenen Nachricht aufgerufen werden soll
+\end{enumerate}
+
+\subsection{LocalObject}
+Die Klasse LocalObject ist ein Wrapper für alle Objekte, die im Nameservice gebunden werden. Hier wird mittels Funktion callMethod die aufzurufende Funktion mit Hilfe von Reflection ausgeführt
+
+\subsubsection{Ablauf callMethod}
+\begin{enumerate}
+\item Aufsplitten der Nachricht, um Methodennamen, Parameter und ihre Datentypen zu extrahieren
+\item Suchen der Funktion durch Name und Class-Array mit Datentypen der Parameter
+\item Aufruf der Funktion mittels Funktion invoke, Parameter: Referenz des Objekts und Object-Array mit Datentypen
+\item Rückgabe des Ergebnisses aus dem Funktionsaufruf als String mit "result:" als Präfix
+\item Treten beim Aufruf Exceptions auf, werden diese gefangen und der Aufrufer wird darüber mittels der Antwort "exception:<ExceptionClass>:<ExceptionMessage>" darüber benachrichtigt 
+\end{enumerate}
+
+\subsection{RemoteObject}
+Das RemoteObject ist der Kommunikationspartner des Dispatchers und wird vom NameServiceInterface zurückgeliefert. Es speichert die Hostadresse und den Port des Servers, auf dem das LocalObject liegt. Wird die Funktion callMethod aufgerufen, wird ein Socket erstellt und der Dispatcher dazu angeleitet, die Funktion des lokalen Objekts aufzurufen. Das Ergebnis wird direkt zurückgeliefert.
+
+\subsubsection{Ablauf callMethod}
+\begin{itemize}
+\item Erstellen eines Sockets mit der gespeicherten Hostadresse und dem Port
+\item Senden der Nachricht über den Socket
+\item Empfangen der Antwort
+\item Rückgabe der Antwort
+\end{itemize}
+
+\section{IDL-Compiler}
+Der IDL Compiler wandelt IDL-Dateien in die in der Datei beschriebenen Klassen um. Aus jeder beschriebenen Klasse wird jeweils eine Abstrakte Klasse und eine Klasse mit Implementierung erzeugt.
+
+\subsection{Ablauf}
+\begin{itemize}
+\item Einlesen der Datei
+\item Speichern des Modulnamens
+\item Einlesen der Klassen und ihrer Funktionen mit Parametern
+\item Speichern der Klassen, Funktionen und Parametern als Objekte
+\item Umwandeln der Klassen mit ihren Funktionen und deren Parametern in die Abstrakten Klassen
+\item Schreiben der Funktion narrowCast, bei der ein Objekt aus dem NameService übergeben werden kann
+\begin{enumerate}
+\item Das übergebene Objekt wird zu einem MWareObject gecastet und damit wird ein neues Objekt der Klasse mit Implementierung erzeugt und zurückgegeben
+\end{enumerate}
+\item Erzeugen der Klasse mit Implementierung, bei der die jeweilige Funktion mit ihren Parametern als String zusammengebaut wird, dass mit diesem die Funktion callMethod des MWareObjects aufgerufen werden kann.
+\begin{enumerate}
+\item Aufruf der Funktion mit dem zusammengebauten String
+\item Casten der Antwort auf den Rückgabetypen der Funktion und Rückgabe des Ergebnisses
+\end{enumerate}
+\end{itemize}

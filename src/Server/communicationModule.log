@@ -1,0 +1,340 @@
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:19:28.546674
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:34:46.896475
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:37:53.176101
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:41:26.558690
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:43:23.604311
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:43:57.142395
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T17:46:03.491689
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42002 | 2019-01-06T17:48:55.983430
+Nachricht wurde gesendet:
+    rebind!Calculator:e330/192.168.1.103:42000 | 2019-01-06T18:02:16.006714
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42000 | 2019-01-06T18:13:20.211426
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42000 | 2019-01-06T18:23:01.762329
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42000 | 2019-01-06T18:35:52.530194
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T18:37:26.070653
+Nachricht erhalten:
+    null!add!1.000000:double,1.000000:double | 2019-01-06T18:37:59.755688
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T19:15:20.914371
+Nachricht erhalten:
+    null!add!1.000000:double,1.000000:double | 2019-01-06T19:17:31.470755
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T19:17:51.598178
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T19:19:03.977359
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T19:24:27.493920
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T19:24:34.719258
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T19:35:51.923835
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T19:36:07.876372
+Nachricht wurde gesendet:
+    exception:class java.lang.NullPointerException:null | 2019-01-06T19:36:07.879336
+Verbindung wurde geschlossen | 2019-01-06T19:36:07.879917
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T20:48:45.400414
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T20:48:55.335992
+Nachricht wurde gesendet:
+    exception:class java.lang.NullPointerException:null | 2019-01-06T20:48:55.343557
+Verbindung wurde geschlossen | 2019-01-06T20:48:55.345118
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T20:51:25.966688
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T20:51:52.580715
+Nachricht wurde gesendet:
+    exception:class java.lang.NullPointerException:null | 2019-01-06T20:51:52.587072
+Verbindung wurde geschlossen | 2019-01-06T20:51:52.588294
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T20:53:59.412583
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T20:54:05.895742
+Nachricht wurde gesendet:
+    exception:class java.lang.NullPointerException:null | 2019-01-06T20:54:05.901094
+Verbindung wurde geschlossen | 2019-01-06T20:54:05.901738
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T20:55:20.704708
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T20:55:39.704605
+Nachricht wurde gesendet:
+    exception:class java.lang.NullPointerException:null | 2019-01-06T20:55:39.712201
+Verbindung wurde geschlossen | 2019-01-06T20:55:39.712851
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:02:05.825026
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:02:15.443289
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:02:15.449892
+Verbindung wurde geschlossen | 2019-01-06T21:02:15.450726
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:08:56.598643
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:08:56.600067
+Verbindung wurde geschlossen | 2019-01-06T21:08:56.600482
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:09:06.001506
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:10:49.003451
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:10:49.007218
+Verbindung wurde geschlossen | 2019-01-06T21:10:49.008040
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:13:07.882578
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:14:43.634821
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:14:43.642499
+Verbindung wurde geschlossen | 2019-01-06T21:14:43.643379
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:19:05.388722
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:19:17.798101
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:19:17.806159
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:24:39.022109
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:24:58.688508
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:30:37.499389
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:30:37.505648
+Verbindung wurde geschlossen | 2019-01-06T21:30:37.506692
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:30:44.490680
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:32:26.217056
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:33:15.264590
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:33:15.271589
+Verbindung wurde geschlossen | 2019-01-06T21:33:15.272991
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-06T21:37:39.602098
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-06T21:37:43.227210
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-06T21:37:43.230224
+Verbindung wurde geschlossen | 2019-01-06T21:37:43.230843
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:49:51.502812
+Nachricht erhalten:
+    Calculator!add!1,000000:double,1,000000:double | 2019-01-07T15:50:12.372980
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:53:56.630523
+Nachricht erhalten:
+    Calculator!add!1,000000:double,1,000000:double | 2019-01-07T15:54:14.446431
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:55:32.416588
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T15:55:41.258770
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T15:55:41.265565
+Verbindung wurde geschlossen | 2019-01-07T15:55:41.266656
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:57:46.986305
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T15:57:56.731153
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T15:57:56.738577
+Verbindung wurde geschlossen | 2019-01-07T15:57:56.739540
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:58:25.894981
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T15:58:49.188040
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T15:58:49.194044
+Verbindung wurde geschlossen | 2019-01-07T15:58:49.194736
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:58:57.108726
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T15:59:34.338999
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T15:59:34.343933
+Verbindung wurde geschlossen | 2019-01-07T15:59:34.344750
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T15:59:40.436383
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T15:59:46.629151
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T15:59:46.635367
+Verbindung wurde geschlossen | 2019-01-07T15:59:46.636304
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:02:38.527011
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:03:10.500165
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:03:10.505053
+Verbindung wurde geschlossen | 2019-01-07T16:03:10.505717
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:08:07.067622
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:08:16.949075
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:08:16.967306
+Verbindung wurde geschlossen | 2019-01-07T16:08:16.968067
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:08:26.002802
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:08:32.716606
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:08:32.721369
+Verbindung wurde geschlossen | 2019-01-07T16:08:32.722230
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:08:47.534315
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:08:47.535308
+Verbindung wurde geschlossen | 2019-01-07T16:08:47.535619
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:11:41.856479
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:12:01.315999
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:12:01.322498
+Verbindung wurde geschlossen | 2019-01-07T16:12:01.323129
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:12:32.094192
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:12:38.862552
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:12:38.869151
+Verbindung wurde geschlossen | 2019-01-07T16:12:38.869998
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:18:38.359167
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:19:56.793882
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:19:56.801415
+Verbindung wurde geschlossen | 2019-01-07T16:19:56.802396
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:23:58.720803
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:24:11.391419
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:24:11.398572
+Verbindung wurde geschlossen | 2019-01-07T16:24:11.399197
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:27:03.818528
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:27:13.358784
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:27:13.565429
+Verbindung wurde geschlossen | 2019-01-07T16:27:13.566917
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:28:15.304396
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:28:25.631043
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:28:25.838239
+Verbindung wurde geschlossen | 2019-01-07T16:28:25.839195
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:34:58.947503
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:36:20.918900
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:36:21.125712
+Verbindung wurde geschlossen | 2019-01-07T16:36:21.127045
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:39:21.724192
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:40:34.941972
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:40:35.149502
+Verbindung wurde geschlossen | 2019-01-07T16:40:35.150733
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:42001 | 2019-01-07T16:40:40.826779
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:40:54.254971
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:40:54.461414
+Verbindung wurde geschlossen | 2019-01-07T16:40:54.462147
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:48:22.024687
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:48:22.225903
+Verbindung wurde geschlossen | 2019-01-07T16:48:22.226811
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:48:39.789777
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:48:39.990888
+Verbindung wurde geschlossen | 2019-01-07T16:48:39.991420
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:52:28.788653
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:52:28.989946
+Verbindung wurde geschlossen | 2019-01-07T16:52:28.990676
+Nachricht erhalten:
+    Calculator!add!1.000000:double,1.000000:double | 2019-01-07T16:54:13.955997
+Nachricht wurde gesendet:
+    result:2.0 | 2019-01-07T16:54:14.157402
+Verbindung wurde geschlossen | 2019-01-07T16:54:14.157896
+Nachricht erhalten:
+    Calculator!add!20.600000:double,21.400000:double | 2019-01-07T16:57:27.808382
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T16:57:28.009351
+Verbindung wurde geschlossen | 2019-01-07T16:57:28.009884
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T16:58:59.506110
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T16:58:59.707024
+Verbindung wurde geschlossen | 2019-01-07T16:58:59.707606
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T17:12:27.957616
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T17:12:28.158825
+Verbindung wurde geschlossen | 2019-01-07T17:12:28.159532
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:11051 | 2019-01-07T20:39:32.371373
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:11673 | 2019-01-07T20:42:47.662049
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:12078 | 2019-01-07T20:48:21.907318
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:12936
+ | 2019-01-07T20:50:08.095456
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:14783
+ | 2019-01-07T20:53:33.920748
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:11547 | 2019-01-07T20:54:29.836521
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T20:55:15.106911
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T20:55:15.110672
+Verbindung wurde geschlossen | 2019-01-07T20:55:15.111401
+Nachricht wurde gesendet:
+    rebind!Calculator:192.168.1.103:11694 | 2019-01-07T21:06:45.781010
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T21:06:49.915983
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T21:06:49.919784
+Verbindung wurde geschlossen | 2019-01-07T21:06:49.922366
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T21:07:18.958968
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T21:07:18.960864
+Verbindung wurde geschlossen | 2019-01-07T21:07:18.965079
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T21:07:19.159262
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T21:07:19.160806
+Verbindung wurde geschlossen | 2019-01-07T21:07:19.161173
+Nachricht erhalten:
+    Calculator!add!20.6:double,21.4:double | 2019-01-07T21:07:19.359608
+Nachricht wurde gesendet:
+    result:42.0 | 2019-01-07T21:07:19.361211
+Verbindung wurde geschlossen | 2019-01-07T21:07:19.362291

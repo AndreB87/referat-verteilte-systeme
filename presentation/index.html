@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Referat Verteilte Systeme - Andre Brand</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Referat Verteilte Systeme</h3>
+					<br />
+					<h4>Andre Brand</h4>
+				</section>
+				<section>
+					<h3>Middleware: Ein Blick hinter die Kulissen</h3>
+				</section>
+				<section>
+					<h3>Agenda</h3>
+					<ul>
+						<li>
+							Protokoll
+						</li>
+						<li>
+							NameService
+						</li>
+						<li>
+							MiddleWare
+						</li>
+						<li>
+							Probleme
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Protokoll</h3>
+					<br />
+					<h4>NameService</h4>
+				</section>
+				<section>
+					<ul>
+						<li>
+							Rebind: rebind!Name:HostAdresse:Port
+						</li>
+						<li>
+							Antwort: ok
+						</li>
+						<li>
+							Resolve: resolve!Name
+						</li>
+						<li>
+							Antwort: ok:Name:HostAdresse:Port
+						</li>
+					</ul>
+				</section>
+				<section>
+					<img src="pictures/FlowChartNameService.jpg" />
+				</section>
+				<section>
+					<h3>Protokoll</h3>
+					<br />
+					<h4>Middleware</h4>
+				</section>
+				<section>
+					<ul>
+						<li>
+							Methodenaufruf: Name!Funktion!Parameter:Datentyp
+						</li>
+						<li>
+							Antwort: result:Ergebnis
+						</li>
+					</ul>
+				</section>
+				<section>
+					<img src="pictures/FlowChartObjectProtokol.jpg" />
+				</section>
+				<section>
+					<h3>NameService</h3>
+				</section>
+				<section>
+					<ul>
+						<li>
+							In Python geschrieben
+						</li>
+						<li>
+							Arbeitet mit Dictionaries
+						</li>
+						<li>
+							Horcht auf TCP-Socket
+						</li>
+						<li>
+							Eingehende Verbindungen starten neuen Thread
+						</li>
+						<li>
+							Thread wertet Anfrage aus und sendet Antwort
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>MiddleWare</h3>
+				</section>
+				<section>
+					<img src="pictures/Baustein.jpg" />
+				</section>
+				<section>
+					<img src="pictures/ClientFlowChart.jpg" />
+				</section>
+				<section>
+					<img src="pictures/ServerFlowChart.jpg" />
+				</section>
+				<section>
+					<h3>Probleme</h3>
+				</section>
+				<section>
+					<ul>
+						<li>
+							Testen
+						</li>
+						<li>
+							Teilweise "kopflos" implementiert
+						</li>
+						<li>
+							Namensgebung
+						</li>
+					</ul>
+				</section>
+				<section>
+					Fragen?
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
